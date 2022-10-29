@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import { useReducer } from "react";
 
 export const App = () => {
   const [count, increment] = useReducer((c) => c + 1, 0);

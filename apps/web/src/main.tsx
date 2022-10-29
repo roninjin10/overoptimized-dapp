@@ -5,7 +5,13 @@ import { createRoot } from "react-dom/client";
 
 import { App } from "./App";
 
-createRoot(document.getElementById("root")!).render(
+const root = document.getElementById("root");
+
+if (!root) {
+  throw new Error("no root foond");
+}
+
+createRoot(root).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
