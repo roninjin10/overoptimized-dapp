@@ -206,7 +206,7 @@
     core-js-pure "^3.25.1"
     regenerator-runtime "^0.13.10"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.17.2", "@babel/runtime@^7.18.9", "@babel/runtime@^7.5.5", "@babel/runtime@^7.9.0":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.17.2", "@babel/runtime@^7.18.9", "@babel/runtime@^7.5.5":
   version "7.20.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.0.tgz#824a9ef325ffde6f78056059db3168c08785e24a"
   integrity sha512-NDYdls71fTXoU8TZHfbBWg7DiZfNzClcKui/+kyi6ppD2L1qnWW3VV6CjtaBXSUGGhiTWJ6ereOIkUvenif66Q==
@@ -908,17 +908,15 @@
     "@tanstack/query-core" "4.13.4"
     use-sync-external-store "^1.2.0"
 
-"@trpc/client@^10.0.0-rc.1":
-  version "10.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.0.0-rc.1.tgz#d47fe548ae770e128ce3d461557e5d5860ecda2d"
-  integrity sha512-7tNq2Oopn1v+R2aGDsulpuCi2MODf8MOtBENOMg8gKnWpw8O6+UPApLJLbMKJJ45qWLg/4jSvpi4kHAYsXTzzA==
+"@trpc/client@^10.0.0-proxy-beta.26":
+  version "10.0.0-proxy-beta.26"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.0.0-proxy-beta.26.tgz#b8df0b7e5c75bef5021e7813da7c0f1df0a93d27"
+  integrity sha512-NTAqTtMCsB5DneoseK/oFYA9YkcIXHuYp1zojnhNpNA+HFzFvkDUHsKNmaPwd5c/KxLr7nP/jQvRzvVuZbgBng==
 
-"@trpc/react@^9.27.4":
-  version "9.27.4"
-  resolved "https://registry.yarnpkg.com/@trpc/react/-/react-9.27.4.tgz#0320e0cbd416506959ddc65a10758fc41d70fb65"
-  integrity sha512-bP74Tf6vWcMoWYiTAvbWrieV9cFQiKUDKRoRj0+VeGJbxdbhdJyUzv4zos0T4SiSKuhgoEm9bP4jWU2NhNhpIA==
-  dependencies:
-    "@babel/runtime" "^7.9.0"
+"@trpc/react@^10.0.0-proxy-beta.20":
+  version "10.0.0-proxy-beta.20"
+  resolved "https://registry.yarnpkg.com/@trpc/react/-/react-10.0.0-proxy-beta.20.tgz#985422b5a5b5ad2c280fa23ccb1714379f29538c"
+  integrity sha512-axuy3Nf71j6vVQFhc7ATSOW4gMTL92RSMTA0p93dNoNQpKqADGjjB1bFUqAmCeAjy441s+h9tqhj3g14sQ/NmA==
 
 "@types/accepts@*":
   version "1.3.5"
