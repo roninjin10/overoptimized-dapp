@@ -3,16 +3,18 @@ import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
+import { infuraProvider } from "wagmi/providers/infura";
 import { publicProvider } from "wagmi/providers/public";
 import type React from "react";
 
-const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
-);
+const { chains, provider } = configureChains(Object.values(chain), [
+  infuraProvider({ apiKey: process.env.INFURA_KEY }),
+  alchemyProvider({ apiKey: process.env.ALCHEMY_KEY }),
+  publicProvider(),
+]);
 
 const { connectors } = getDefaultWallets({
-  appName: "My RainbowKit App",
+  appName: "Rugged",
   chains,
 });
 
@@ -22,7 +24,7 @@ const wagmiClient = createClient({
   provider,
 });
 
-export const Providers: React.FC<{ children: React.ReactNode }> = ({
+export const WalletProviders: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   return (
