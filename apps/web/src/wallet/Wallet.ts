@@ -5,8 +5,8 @@ import { infuraProvider } from "wagmi/providers/infura";
 import { publicProvider } from "wagmi/providers/public";
 
 const { chains, provider } = configureChains(Object.values(chain), [
-  infuraProvider({ apiKey: process.env.INFURA_KEY }),
-  alchemyProvider({ apiKey: process.env.ALCHEMY_KEY }),
+  infuraProvider({ apiKey: import.meta.env.INFURA_KEY }),
+  alchemyProvider({ apiKey: import.meta.env.ALCHEMY_KEY }),
   publicProvider(),
 ]);
 

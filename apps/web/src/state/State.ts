@@ -7,7 +7,13 @@ import { devtools } from "zustand/middleware";
  * state with this.someProp but instead want to always
  * use this.get() to get the state
  */
-const VALID_KEYS = new Set(["get", "set", "createStore"]);
+const VALID_KEYS = new Set([
+  "get",
+  "set",
+  "createReactStore",
+  "createVanillaStore",
+]);
+
 /**
  * The base class that other pieces of state extend from
  * I made this class based because it reduces the boilerplate

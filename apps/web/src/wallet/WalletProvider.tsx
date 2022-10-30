@@ -11,6 +11,7 @@ interface Props {
 }
 
 export const WalletProvider: React.FC<Props> = ({ children, wallet }) => {
+  console.log(wallet);
   return (
     <WagmiConfig client={wallet.client}>
       <RainbowKitProvider chains={wallet.chains}>{children}</RainbowKitProvider>
