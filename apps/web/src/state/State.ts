@@ -15,7 +15,7 @@ const VALID_KEYS = new Set(["get", "set", "createStore"]);
  *
  * @see https://docs.pmnd.rs/zustand
  */
-export abstract class AppState<T extends {}> {
+export abstract class State<T extends {}> {
   /**
    * Get latest zustand state
    */
